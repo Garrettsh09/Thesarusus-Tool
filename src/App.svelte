@@ -17,7 +17,7 @@
 	<Container>
 		<Row>
 			<Col>
-				<h1>Thesarusus Tool</h1>
+				<h1>Thesaurus Tool</h1>
 			</Col>
 		</Row>
 		<Generate/>
