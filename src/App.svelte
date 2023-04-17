@@ -3,6 +3,7 @@
     import Generate from './GenerateButton.svelte';
 	import Sentence from './Sentence.svelte';
 	import NextPreviousButton from './NextPreviousButton.svelte';
+	import Request from './Request.svelte';
 </script>
 
 <style>
@@ -32,11 +33,14 @@
 		<Generate/>
 		<Row>
 			<Col>
-				<Sentence sentence='Select the word you want to choose' />
+				<Sentence sentence={'Test'}/>
 				<h1> </h1>
 			</Col>
 		</Row>
 		<NextPreviousButton/>
+		<Row>
+			<Request/>
+		</Row>
 	</Container>
 </main>
 
