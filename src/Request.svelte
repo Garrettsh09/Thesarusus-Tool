@@ -14,13 +14,15 @@
         
         );
         const data = await response.json();
-        word = data.WordProbe;
+        word = word[1]
     });
 
 </script>
 
 <Form>
     <Row>   
-        <h1>{word}</h1>
+        {#if word}
+            <h1>{word}</h1>
+        {/if}
     </Row>
 </Form>
