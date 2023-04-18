@@ -15,7 +15,7 @@
         <Col>
             <FormGroup>
                 <h1> </h1>
-                <Input type="text"  bind:value={word} placeholder={'Placeholder'}/>
+                <Input type="text"  bind:value={word} placeholder='Placeholder'/>
                 <h1> </h1>
                 <Button color="primary" class="Generate" on:click={hasSent}>Generate </Button>
             </FormGroup>

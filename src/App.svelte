@@ -3,7 +3,6 @@
     import Generate, { disp } from './GenerateButton.svelte';
 	import Sentence from './Sentence.svelte';
 	import NextPreviousButton from './NextPreviousButton.svelte';
-	import Request from './Request.svelte';
 </script>
 
 <style>
@@ -38,9 +37,6 @@
 			</Col>
 		</Row>
 		<NextPreviousButton/>
-		<Row>
-			<Request/>
-		</Row>
 	</Container>
 </main>
 
