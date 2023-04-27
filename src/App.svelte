@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Col, Container, Row, Label } from 'sveltestrap';
-    import Generate, { disp } from './GenerateButton.svelte';
-	import Sentence from './Sentence.svelte';
+    import Generate, {word} from './GenerateButton.svelte';
 	import NextPreviousButton from './NextPreviousButton.svelte';
 </script>
 
@@ -32,8 +31,9 @@
 		<Generate/>
 		<Row>
 			<Col>
-				<Sentence sentence={disp}/>
-				<h1> </h1>
+				{#if {word}}
+					<h1>{word}</h1>
+				{/if}
 			</Col>
 		</Row>
 		<NextPreviousButton/>

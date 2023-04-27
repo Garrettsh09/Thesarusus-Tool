@@ -1,23 +1,20 @@
 <script lang="ts" context='module'>
-    import { Form, FormGroup, FormText, Input, Label, Col, Row, Button } from 'sveltestrap';
-    let word;
-    export let disp;
-    disp = 'a'
+    import { Form, FormGroup, FormText, Input, Label, Col, Row, Button, Fade, Card } from 'sveltestrap';
+    import Sentence from './Sentence.svelte';
 
-    function hasSent(){
-        const disp = word;   
-    };
-
+    export let word = 'Word';
 </script>
 
 <Form>
     <Row>
         <Col>
             <FormGroup>
+                <Input type='text' name='text' placeholder="type here" bind:value={word}/>
                 <h1> </h1>
-                <Input type="text"  bind:value={word} placeholder='Placeholder'/>
-                <h1> </h1>
-                <Button color="primary" class="Generate" on:click={hasSent}>Generate </Button>
+                <Button color="primary" id="toggler" class="mb-3">Generate</Button>
+                <Fade toggler="#toggler">
+                    <Sentence sentence={word}/>
+                </Fade>
             </FormGroup>
         </Col>
     </Row>
